@@ -4,13 +4,13 @@
 
 at::Tensor BinActivateFunc_forward(
     at::Tensor input) {
-        return at:sign(input);
+        return at::sign(input);
 }
 
 at::Tensor BinActivateFunc_backward(
     at::Tensor input,
-    at::Tensor gradinput) {
-        return gradinput;
+    at::Tensor gradInput) {
+        return gradInput;
 }
 
 
