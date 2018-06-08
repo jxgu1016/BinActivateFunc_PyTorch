@@ -2,7 +2,7 @@ import torch
 from torch.autograd import Function
 import BinActivateFunc_cpp
 
-torch.manual_seed(42)
+torch.manual_seed(618)
 
 class BinActivateFunc(Function):
     @staticmethod
@@ -13,8 +13,8 @@ class BinActivateFunc(Function):
 
     @staticmethod
     def backward(ctx, grad_output):
-        # grad_input = grad_output.clone()
-        grad_input = BinActivateFunc_cpp.backward(ctx.input, grad_output)
+        grad_input = grad_output.clone()
+        BinActivateFunc_cpp.backward(ctx.input, grad_input)
         return grad_input
 
 def main():
