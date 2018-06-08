@@ -8,3 +8,4 @@ sh install.sh
 ## Usage
 1. copy ```function/BinActivateFunc.py``` to your working dir
 2. ```from BinActivateFunc import BinActivateFunc```
+3. ```binfunc = BinActivateFunc.apply```
