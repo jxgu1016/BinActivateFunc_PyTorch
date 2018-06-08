@@ -6,5 +6,5 @@ cd BinActivateFunc_PyTorch
 sh install.sh
 ```
 ## Usage
-1. copy ```BinActivateFunc.py``` to your working dir
+1. copy ```function/BinActivateFunc.py``` to your working dir
 2. ```from BinActivateFunc import BinActivateFunc```
