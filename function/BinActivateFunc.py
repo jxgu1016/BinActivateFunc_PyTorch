@@ -2,8 +2,6 @@ import torch
 from torch.autograd import Function
 import BinActivateFunc_cpp, BinActivateFunc_cuda
 
-torch.manual_seed(618)
-
 class BinActivateFunc(Function):
     @staticmethod
     def forward(ctx, input):

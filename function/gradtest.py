@@ -18,4 +18,5 @@ def main():
     print(torch.equal(grad_output, input.grad))
 
 if __name__ == '__main__':
+    torch.manual_seed(618)
     main()
